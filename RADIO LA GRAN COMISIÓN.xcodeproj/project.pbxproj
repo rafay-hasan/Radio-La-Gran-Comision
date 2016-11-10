@@ -1,0 +1,319 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BBC261CE1DD4C0D00033B4A6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BBC261CD1DD4C0D00033B4A6 /* main.m */; };
+		BBC261D11DD4C0D00033B4A6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BBC261D01DD4C0D00033B4A6 /* AppDelegate.m */; };
+		BBC261D41DD4C0D00033B4A6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BBC261D31DD4C0D00033B4A6 /* ViewController.m */; };
+		BBC261D71DD4C0D00033B4A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBC261D51DD4C0D00033B4A6 /* Main.storyboard */; };
+		BBC261D91DD4C0D00033B4A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBC261D81DD4C0D00033B4A6 /* Assets.xcassets */; };
+		BBC261DC1DD4C0D00033B4A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBC261DA1DD4C0D00033B4A6 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BBC261C91DD4C0D00033B4A6 /* RADIO LA GRAN COMISIÓN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RADIO LA GRAN COMISIÓN.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBC261CD1DD4C0D00033B4A6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BBC261CF1DD4C0D00033B4A6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BBC261D01DD4C0D00033B4A6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BBC261D21DD4C0D00033B4A6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		BBC261D31DD4C0D00033B4A6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		BBC261D61DD4C0D00033B4A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BBC261D81DD4C0D00033B4A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BBC261DB1DD4C0D00033B4A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BBC261DD1DD4C0D00033B4A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BBC261C61DD4C0CF0033B4A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BBC261C01DD4C0CF0033B4A6 = {
+			isa = PBXGroup;
+			children = (
+				BBC261CB1DD4C0D00033B4A6 /* RADIO LA GRAN COMISIÓN */,
+				BBC261CA1DD4C0D00033B4A6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BBC261CA1DD4C0D00033B4A6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BBC261C91DD4C0D00033B4A6 /* RADIO LA GRAN COMISIÓN.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BBC261CB1DD4C0D00033B4A6 /* RADIO LA GRAN COMISIÓN */ = {
+			isa = PBXGroup;
+			children = (
+				BBC261CF1DD4C0D00033B4A6 /* AppDelegate.h */,
+				BBC261D01DD4C0D00033B4A6 /* AppDelegate.m */,
+				BBC261D21DD4C0D00033B4A6 /* ViewController.h */,
+				BBC261D31DD4C0D00033B4A6 /* ViewController.m */,
+				BBC261D51DD4C0D00033B4A6 /* Main.storyboard */,
+				BBC261D81DD4C0D00033B4A6 /* Assets.xcassets */,
+				BBC261DA1DD4C0D00033B4A6 /* LaunchScreen.storyboard */,
+				BBC261DD1DD4C0D00033B4A6 /* Info.plist */,
+				BBC261CC1DD4C0D00033B4A6 /* Supporting Files */,
+			);
+			path = "RADIO LA GRAN COMISIÓN";
+			sourceTree = "<group>";
+		};
+		BBC261CC1DD4C0D00033B4A6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BBC261CD1DD4C0D00033B4A6 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BBC261C81DD4C0CF0033B4A6 /* RADIO LA GRAN COMISIÓN */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BBC261E01DD4C0D00033B4A6 /* Build configuration list for PBXNativeTarget "RADIO LA GRAN COMISIÓN" */;
+			buildPhases = (
+				BBC261C51DD4C0CF0033B4A6 /* Sources */,
+				BBC261C61DD4C0CF0033B4A6 /* Frameworks */,
+				BBC261C71DD4C0CF0033B4A6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RADIO LA GRAN COMISIÓN";
+			productName = "RADIO LA GRAN COMISIÓN";
+			productReference = BBC261C91DD4C0D00033B4A6 /* RADIO LA GRAN COMISIÓN.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BBC261C11DD4C0CF0033B4A6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Rafay Hasan";
+				TargetAttributes = {
+					BBC261C81DD4C0CF0033B4A6 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = RDZWK986QJ;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = BBC261C41DD4C0CF0033B4A6 /* Build configuration list for PBXProject "RADIO LA GRAN COMISIÓN" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BBC261C01DD4C0CF0033B4A6;
+			productRefGroup = BBC261CA1DD4C0D00033B4A6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BBC261C81DD4C0CF0033B4A6 /* RADIO LA GRAN COMISIÓN */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BBC261C71DD4C0CF0033B4A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBC261DC1DD4C0D00033B4A6 /* LaunchScreen.storyboard in Resources */,
+				BBC261D91DD4C0D00033B4A6 /* Assets.xcassets in Resources */,
+				BBC261D71DD4C0D00033B4A6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BBC261C51DD4C0CF0033B4A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBC261D41DD4C0D00033B4A6 /* ViewController.m in Sources */,
+				BBC261D11DD4C0D00033B4A6 /* AppDelegate.m in Sources */,
+				BBC261CE1DD4C0D00033B4A6 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BBC261D51DD4C0D00033B4A6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BBC261D61DD4C0D00033B4A6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BBC261DA1DD4C0D00033B4A6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BBC261DB1DD4C0D00033B4A6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BBC261DE1DD4C0D00033B4A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BBC261DF1DD4C0D00033B4A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BBC261E11DD4C0D00033B4A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = RDZWK986QJ;
+				INFOPLIST_FILE = "RADIO LA GRAN COMISIÓN/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Rafay.RADIO-LA-GRAN-COMISIO-N";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BBC261E21DD4C0D00033B4A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = RDZWK986QJ;
+				INFOPLIST_FILE = "RADIO LA GRAN COMISIÓN/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Rafay.RADIO-LA-GRAN-COMISIO-N";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BBC261C41DD4C0CF0033B4A6 /* Build configuration list for PBXProject "RADIO LA GRAN COMISIÓN" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BBC261DE1DD4C0D00033B4A6 /* Debug */,
+				BBC261DF1DD4C0D00033B4A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BBC261E01DD4C0D00033B4A6 /* Build configuration list for PBXNativeTarget "RADIO LA GRAN COMISIÓN" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BBC261E11DD4C0D00033B4A6 /* Debug */,
+				BBC261E21DD4C0D00033B4A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BBC261C11DD4C0CF0033B4A6 /* Project object */;
+}
