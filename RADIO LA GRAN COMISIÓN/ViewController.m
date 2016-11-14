@@ -11,6 +11,10 @@
 
 @interface ViewController ()
 
+@property (weak, nonatomic) IBOutlet UIButton *radioButton;
+
+@property (weak, nonatomic) IBOutlet UILabel *songNameLabel;
+
 @end
 
 @implementation ViewController
@@ -34,7 +38,26 @@
 -(void) triggerAction:(NSNotification *) notification
 {
     NSDictionary *dict = notification.userInfo;
-    NSLog(@"song name is %@",[dict valueForKey:@"songName"]);
+    //NSLog(@"song name is %@",[dict valueForKey:@"songName"]);
+    
+    self.songNameLabel.text = [dict valueForKey:@"songName"];
+}
+
+
+- (IBAction)playPauseButtonAction:(UIButton *)sender {
+    
+    if([[self.radioButton backgroundImageForState:UIControlStateNormal] isEqual:[UIImage imageNamed:@"play"]])
+    {
+        [[StreamingFile sharedInstance] pausePlayer];
+        [self.radioButton setBackgroundImage:[UIImage imageNamed:@"pause"] forState:UIControlStateNormal];
+    }
+    else
+    {
+        [[StreamingFile sharedInstance] playPlayer];
+        [self.radioButton setBackgroundImage:[UIImage imageNamed:@"play"] forState:UIControlStateNormal];
+    }
+    
+
 }
 
 

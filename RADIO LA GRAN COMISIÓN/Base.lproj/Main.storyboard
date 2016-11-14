@@ -26,7 +26,7 @@
                                                 <state key="normal" backgroundImage="world"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0RU-rZ-pv5">
-                                                <state key="normal" backgroundImage="world"/>
+                                                <state key="normal" backgroundImage="facebook"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cfR-is-OPB">
                                                 <state key="normal" backgroundImage="world"/>
@@ -42,26 +42,57 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.32549019607843138" green="0.42352941176470588" blue="0.47058823529411764" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="gCQ-O4-ukK" secondAttribute="trailing" id="IlJ-IU-nni"/>
-                                    <constraint firstItem="gCQ-O4-ukK" firstAttribute="leading" secondItem="vDc-zL-3Zp" secondAttribute="leading" id="b5n-e7-hBr"/>
+                                    <constraint firstAttribute="trailing" secondItem="gCQ-O4-ukK" secondAttribute="trailing" constant="15" id="IlJ-IU-nni"/>
+                                    <constraint firstItem="gCQ-O4-ukK" firstAttribute="leading" secondItem="vDc-zL-3Zp" secondAttribute="leading" constant="15" id="b5n-e7-hBr"/>
                                     <constraint firstAttribute="height" constant="75" id="lpO-2O-zPl"/>
                                     <constraint firstItem="gCQ-O4-ukK" firstAttribute="centerY" secondItem="vDc-zL-3Zp" secondAttribute="centerY" id="sbN-WC-R57"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sCq-Ly-IPi">
-                                <frame key="frameInset" minY="581" width="414" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sCq-Ly-IPi">
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7dK-Mi-wE2">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="eq3-Re-Gyb"/>
+                                            <constraint firstAttribute="width" constant="40" id="xyH-XL-bIS"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="play"/>
+                                        <connections>
+                                            <action selector="playPauseButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eEa-ni-gnt"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mEF-d8-Tzj">
+                                        <frame key="frameInset" minX="86" minY="20" width="320" height="40"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="7dK-Mi-wE2" firstAttribute="leading" secondItem="sCq-Ly-IPi" secondAttribute="leading" constant="25" id="FLF-Av-KcC"/>
+                                    <constraint firstAttribute="trailing" secondItem="mEF-d8-Tzj" secondAttribute="trailing" constant="8" id="XMH-zg-HOt"/>
+                                    <constraint firstItem="mEF-d8-Tzj" firstAttribute="centerY" secondItem="sCq-Ly-IPi" secondAttribute="centerY" id="euR-U0-eYS"/>
+                                    <constraint firstAttribute="height" constant="80" id="pwb-B2-jXL"/>
+                                    <constraint firstItem="7dK-Mi-wE2" firstAttribute="centerY" secondItem="sCq-Ly-IPi" secondAttribute="centerY" id="qs4-mr-01q"/>
+                                    <constraint firstItem="mEF-d8-Tzj" firstAttribute="leading" secondItem="7dK-Mi-wE2" secondAttribute="trailing" constant="21" id="tqc-pX-Rfu"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="vDc-zL-3Zp" secondAttribute="trailing" id="1OK-0L-Ikd"/>
+                            <constraint firstAttribute="trailing" secondItem="sCq-Ly-IPi" secondAttribute="trailing" id="Cxb-ve-I1C"/>
+                            <constraint firstItem="sCq-Ly-IPi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Lva-LP-SdZ"/>
                             <constraint firstItem="vDc-zL-3Zp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="iLV-g8-7mK"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="vDc-zL-3Zp" secondAttribute="bottom" id="kFH-fh-6Xh"/>
+                            <constraint firstItem="vDc-zL-3Zp" firstAttribute="top" secondItem="sCq-Ly-IPi" secondAttribute="bottom" id="mDk-YC-aMZ"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="LA GRAN COMISIÓN" id="6UX-fQ-NrE"/>
+                    <connections>
+                        <outlet property="radioButton" destination="7dK-Mi-wE2" id="WYx-Pw-aDD"/>
+                        <outlet property="songNameLabel" destination="mEF-d8-Tzj" id="yn1-rK-NsW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -90,6 +121,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="facebook" width="30" height="30"/>
+        <image name="play" width="40" height="40"/>
         <image name="world" width="35" height="35"/>
     </resources>
 </document>
