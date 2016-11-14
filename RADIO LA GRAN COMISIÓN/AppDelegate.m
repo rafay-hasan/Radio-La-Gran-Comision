@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "StreamingFile.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [[StreamingFile sharedInstance]makeStreamingWithUrl:@"http://server4.usatelk.com:8017/"];
     return YES;
 }
 

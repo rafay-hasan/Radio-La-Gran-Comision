@@ -13,9 +13,11 @@
 		BBC261D71DD4C0D00033B4A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBC261D51DD4C0D00033B4A6 /* Main.storyboard */; };
 		BBC261D91DD4C0D00033B4A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBC261D81DD4C0D00033B4A6 /* Assets.xcassets */; };
 		BBC261DC1DD4C0D00033B4A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBC261DA1DD4C0D00033B4A6 /* LaunchScreen.storyboard */; };
+		BBC261E51DD4C0FB0033B4A6 /* StreamingFile.m in Sources */ = {isa = PBXBuildFile; fileRef = BBC261E41DD4C0FB0033B4A6 /* StreamingFile.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BB0B7FA21DD9FC6F0036EF7A /* RADIO LA GRAN COMISIÓN.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "RADIO LA GRAN COMISIÓN.entitlements"; sourceTree = "<group>"; };
 		BBC261C91DD4C0D00033B4A6 /* RADIO LA GRAN COMISIÓN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RADIO LA GRAN COMISIÓN.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBC261CD1DD4C0D00033B4A6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BBC261CF1DD4C0D00033B4A6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +28,8 @@
 		BBC261D81DD4C0D00033B4A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BBC261DB1DD4C0D00033B4A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BBC261DD1DD4C0D00033B4A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BBC261E31DD4C0FB0033B4A6 /* StreamingFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StreamingFile.h; sourceTree = "<group>"; };
+		BBC261E41DD4C0FB0033B4A6 /* StreamingFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StreamingFile.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +62,11 @@
 		BBC261CB1DD4C0D00033B4A6 /* RADIO LA GRAN COMISIÓN */ = {
 			isa = PBXGroup;
 			children = (
+				BB0B7FA21DD9FC6F0036EF7A /* RADIO LA GRAN COMISIÓN.entitlements */,
 				BBC261CF1DD4C0D00033B4A6 /* AppDelegate.h */,
 				BBC261D01DD4C0D00033B4A6 /* AppDelegate.m */,
+				BBC261E31DD4C0FB0033B4A6 /* StreamingFile.h */,
+				BBC261E41DD4C0FB0033B4A6 /* StreamingFile.m */,
 				BBC261D21DD4C0D00033B4A6 /* ViewController.h */,
 				BBC261D31DD4C0D00033B4A6 /* ViewController.m */,
 				BBC261D51DD4C0D00033B4A6 /* Main.storyboard */,
@@ -110,8 +117,12 @@
 				TargetAttributes = {
 					BBC261C81DD4C0CF0033B4A6 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = RDZWK986QJ;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.SafariKeychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -151,6 +162,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBC261E51DD4C0FB0033B4A6 /* StreamingFile.m in Sources */,
 				BBC261D41DD4C0D00033B4A6 /* ViewController.m in Sources */,
 				BBC261D11DD4C0D00033B4A6 /* AppDelegate.m in Sources */,
 				BBC261CE1DD4C0D00033B4A6 /* main.m in Sources */,
@@ -273,7 +285,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = RDZWK986QJ;
+				CODE_SIGN_ENTITLEMENTS = "RADIO LA GRAN COMISIÓN/RADIO LA GRAN COMISIÓN.entitlements";
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "RADIO LA GRAN COMISIÓN/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Rafay.RADIO-LA-GRAN-COMISIO-N";
@@ -285,7 +298,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = RDZWK986QJ;
+				CODE_SIGN_ENTITLEMENTS = "RADIO LA GRAN COMISIÓN/RADIO LA GRAN COMISIÓN.entitlements";
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "RADIO LA GRAN COMISIÓN/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Rafay.RADIO-LA-GRAN-COMISIO-N";
@@ -312,6 +326,7 @@
 				BBC261E21DD4C0D00033B4A6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,63 +1,105 @@
 {
   "images" : [
     {
+      "size" : "20x20",
       "idiom" : "iphone",
-      "size" : "29x29",
+      "filename" : "comi512x512.png",
       "scale" : "2x"
     },
     {
+      "size" : "20x20",
       "idiom" : "iphone",
-      "size" : "29x29",
+      "filename" : "comi512x512-1.png",
       "scale" : "3x"
     },
     {
+      "size" : "29x29",
       "idiom" : "iphone",
-      "size" : "40x40",
+      "filename" : "comi512x512-2.png",
       "scale" : "2x"
     },
     {
+      "size" : "29x29",
       "idiom" : "iphone",
-      "size" : "40x40",
+      "filename" : "comi512x512-3.png",
       "scale" : "3x"
     },
     {
+      "size" : "40x40",
       "idiom" : "iphone",
+      "filename" : "comi512x512-4.png",
+      "scale" : "2x"
+    },
+    {
+      "size" : "40x40",
+      "idiom" : "iphone",
+      "filename" : "comi512x512-5.png",
+      "scale" : "3x"
+    },
+    {
       "size" : "60x60",
+      "idiom" : "iphone",
+      "filename" : "comi512x512-6.png",
       "scale" : "2x"
     },
     {
-      "idiom" : "iphone",
       "size" : "60x60",
+      "idiom" : "iphone",
+      "filename" : "comi512x512-7.png",
       "scale" : "3x"
     },
     {
+      "size" : "20x20",
       "idiom" : "ipad",
-      "size" : "29x29",
+      "filename" : "comi512x512-8.png",
       "scale" : "1x"
     },
     {
+      "size" : "20x20",
       "idiom" : "ipad",
-      "size" : "29x29",
+      "filename" : "comi512x512-9.png",
       "scale" : "2x"
     },
     {
+      "size" : "29x29",
       "idiom" : "ipad",
-      "size" : "40x40",
+      "filename" : "comi512x512-10.png",
       "scale" : "1x"
     },
     {
+      "size" : "29x29",
       "idiom" : "ipad",
-      "size" : "40x40",
+      "filename" : "comi512x512-11.png",
       "scale" : "2x"
     },
     {
+      "size" : "40x40",
       "idiom" : "ipad",
-      "size" : "76x76",
+      "filename" : "comi512x512-12.png",
       "scale" : "1x"
     },
     {
+      "size" : "40x40",
       "idiom" : "ipad",
+      "filename" : "comi512x512-13.png",
+      "scale" : "2x"
+    },
+    {
       "size" : "76x76",
+      "idiom" : "ipad",
+      "filename" : "comi512x512-14.png",
+      "scale" : "1x"
+    },
+    {
+      "size" : "76x76",
+      "idiom" : "ipad",
+      "filename" : "comi512x512-15.png",
+      "scale" : "2x"
+    },
+    {
+      "size" : "83.5x83.5",
+      "idiom" : "ipad",
+      "filename" : "comi512x512-16.png",
       "scale" : "2x"
     }
   ],
