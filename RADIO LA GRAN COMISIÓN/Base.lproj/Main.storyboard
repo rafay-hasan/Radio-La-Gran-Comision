@@ -3,6 +3,8 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -14,7 +16,7 @@
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
-                    <view key="view" alpha="0.5" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" alpha="0.90000000000000002" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -23,16 +25,44 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="gCQ-O4-ukK">
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eYM-gC-E2j">
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="30" id="7dJ-33-C4R"/>
+                                                    <constraint firstAttribute="height" constant="30" id="FQq-Oz-BWE"/>
+                                                </constraints>
                                                 <state key="normal" backgroundImage="world"/>
+                                                <connections>
+                                                    <action selector="worldIconAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i9V-Tc-2KY"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0RU-rZ-pv5">
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="1vD-nb-Lq5"/>
+                                                    <constraint firstAttribute="width" constant="30" id="MU6-1S-ZDA"/>
+                                                </constraints>
                                                 <state key="normal" backgroundImage="facebook"/>
+                                                <connections>
+                                                    <action selector="facebookAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vqa-cD-jTl"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cfR-is-OPB">
-                                                <state key="normal" backgroundImage="world"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="9zR-TX-FTV"/>
+                                                    <constraint firstAttribute="width" constant="30" id="Omn-K2-2jU"/>
+                                                </constraints>
+                                                <state key="normal" backgroundImage="twitter"/>
+                                                <connections>
+                                                    <action selector="twitterAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MMx-bN-Ops"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dCo-xC-ato">
-                                                <state key="normal" backgroundImage="world"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="2VU-SM-5fb"/>
+                                                    <constraint firstAttribute="width" constant="30" id="zzg-mW-Jol"/>
+                                                </constraints>
+                                                <state key="normal" backgroundImage="buyingIcon"/>
+                                                <connections>
+                                                    <action selector="buyMusicAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TWf-Tk-UM8"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -67,7 +97,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstItem="7dK-Mi-wE2" firstAttribute="leading" secondItem="sCq-Ly-IPi" secondAttribute="leading" constant="25" id="FLF-Av-KcC"/>
                                     <constraint firstAttribute="trailing" secondItem="mEF-d8-Tzj" secondAttribute="trailing" constant="8" id="XMH-zg-HOt"/>
@@ -77,26 +107,154 @@
                                     <constraint firstItem="mEF-d8-Tzj" firstAttribute="leading" secondItem="7dK-Mi-wE2" secondAttribute="trailing" constant="21" id="tqc-pX-Rfu"/>
                                 </constraints>
                             </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="JIW-bp-Ohu"/>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="vDc-zL-3Zp" secondAttribute="trailing" id="1OK-0L-Ikd"/>
+                            <constraint firstItem="JIW-bp-Ohu" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="48G-lH-lN4"/>
                             <constraint firstAttribute="trailing" secondItem="sCq-Ly-IPi" secondAttribute="trailing" id="Cxb-ve-I1C"/>
+                            <constraint firstAttribute="trailing" secondItem="JIW-bp-Ohu" secondAttribute="trailing" constant="8" id="G4Z-gj-019"/>
                             <constraint firstItem="sCq-Ly-IPi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Lva-LP-SdZ"/>
+                            <constraint firstItem="JIW-bp-Ohu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="8" id="cmM-Kr-wjf"/>
+                            <constraint firstItem="sCq-Ly-IPi" firstAttribute="top" secondItem="JIW-bp-Ohu" secondAttribute="bottom" constant="8" id="e9r-IA-pUR"/>
                             <constraint firstItem="vDc-zL-3Zp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="iLV-g8-7mK"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="vDc-zL-3Zp" secondAttribute="bottom" id="kFH-fh-6Xh"/>
                             <constraint firstItem="vDc-zL-3Zp" firstAttribute="top" secondItem="sCq-Ly-IPi" secondAttribute="bottom" id="mDk-YC-aMZ"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="LA GRAN COMISIÓN" id="6UX-fQ-NrE"/>
+                    <navigationItem key="navigationItem" title="LA GRAN COMISIÓN" id="6UX-fQ-NrE">
+                        <rightBarButtonItems>
+                            <barButtonItem image="info" id="nXV-H4-erL">
+                                <connections>
+                                    <segue destination="dyO-ZV-86Q" kind="show" id="b9z-3B-cUT"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem image="book-1" id="bQD-9f-gE9">
+                                <connections>
+                                    <segue destination="qYX-Zt-YuD" kind="show" id="gCx-5v-oFX"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem image="gallery" id="HfD-dW-3Bu">
+                                <connections>
+                                    <action selector="galleryAction:" destination="BYZ-38-t0r" id="CS6-Ya-9Tc"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
                     <connections>
+                        <outlet property="homeBgImageView" destination="JIW-bp-Ohu" id="GSw-7N-aZg"/>
                         <outlet property="radioButton" destination="7dK-Mi-wE2" id="WYx-Pw-aDD"/>
                         <outlet property="songNameLabel" destination="mEF-d8-Tzj" id="yn1-rK-NsW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1075.3623188405797" y="123.09782608695653"/>
+            <point key="canvasLocation" x="939" y="483"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="gi0-r7-15U">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="dyO-ZV-86Q" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wW9-DG-b8u"/>
+                        <viewControllerLayoutGuide type="bottom" id="8zE-GD-51g"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="UG7-5d-OXg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dAb-mh-nFi">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Quienes somos: Somos un ministerio que han sido levantado para establecer y avanzar el Reino de Dios en toda nuestra ciudad y en las naciones de la Tierra. Para alcanzar, edificar, equipar, entrenar las almas para Cristo y así guiarlos hacia el crecimiento y madurez espiritual, para que cada uno cumpla su llamado y propósito en Dios con una visión de reino, una visión para la ciudad y las naciones de la tierra.</string>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RADIO LA GRAN COMISIÓN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MQL-ze-Sbm">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="zgw-lH-I7f"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="8zE-GD-51g" firstAttribute="top" secondItem="dAb-mh-nFi" secondAttribute="bottom" id="0Yn-xU-UDQ"/>
+                            <constraint firstItem="MQL-ze-Sbm" firstAttribute="top" secondItem="wW9-DG-b8u" secondAttribute="bottom" constant="8" id="6ff-bF-w54"/>
+                            <constraint firstAttribute="trailing" secondItem="MQL-ze-Sbm" secondAttribute="trailing" id="JTQ-SA-ORh"/>
+                            <constraint firstAttribute="trailing" secondItem="dAb-mh-nFi" secondAttribute="trailing" id="La0-iz-x1u"/>
+                            <constraint firstItem="MQL-ze-Sbm" firstAttribute="leading" secondItem="UG7-5d-OXg" secondAttribute="leading" id="Y60-Bc-Pfq"/>
+                            <constraint firstItem="dAb-mh-nFi" firstAttribute="top" secondItem="MQL-ze-Sbm" secondAttribute="bottom" constant="20" id="bg1-ww-dOW"/>
+                            <constraint firstItem="dAb-mh-nFi" firstAttribute="leading" secondItem="UG7-5d-OXg" secondAttribute="leading" id="top-HI-QiX"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="467-Nu-I55" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1937.68115942029" y="155.70652173913044"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="iNa-i4-Cxe">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="qYX-Zt-YuD" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4gZ-Yz-zmN"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZK5-Ry-k0h"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9yR-bN-Qds">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RADIO LA GRAN COMISIÓN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Qa-BV-XfT">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="e0v-H0-QZB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="pVa-pU-5VO">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <mutableString key="text">VISIÓN  
+La Iglesia que Dios busca debe estar influenciando activamente fuera de sus muros y no solamente dentro de ellos. Queremos ser parte activa de la Gran Comisión de Nuestro Señor Jesús, predicando el Evangelio y haciendo discípulos. Hemos visto como este mundo puede ser impactado con la predicación y enseñanza, la música contemporánea, la alabanza, las artes, etc.
+La Gran Comisión de la radio va a ser ver al Mundo creciendo a tal grado que no pasaremos desapercibidos en nuestra ciudad y nación; enseñando y predicando claramente la Palabra de Dios en todo momento y lugar, alcanzando a multitudes en estadios, cruzadas, y en nuestros programas de radio y TV, etc.
+La Gran Comisión de la radio va a ser motivada por el poder del Espíritu Santo, luchando y avanzando siempre adelante, sin parar... llena de gente que en unidad derribará las puertas de sus enemigos y penetrará fortalezas inquebrantables.
+La Gran Comisiones de llenar al Mundo del amor del Padre en los rostros de cada oyente, extendiendo la misericordia y la esperanza, dando respuestas y amor a los necesitados.
+La Gran Comisiones de Ver una Iglesia levantándose, entrenando y equipando a esta generación para recoger una pesca tan grande, que las redes se rompan.
+La Gran Comisiones ver una Iglesia cuya única cabeza es Jesús, Nuestro Rey y Señor, llena del Espíritu de Dios... cumpliendo la Gran Comisión.
+ 
+ 
+MISIÓN  
+La Iglesia que Dios busca debe estar trabajando en una misma visión, con una misión bien dirigida. Para que podemos ser parte activa de la Gran Comisión de Nuestro Señor Jesús, hay 5 tareas que deben ser prioridades de toda Iglesia:
+ORACIÓN (Efesios. 3:20; 6:18; I Tesalonicenses. 5:17: I Tim.2:1-4)
+Es el arma más poderosa que tenemos en nuestras manos y es por esto que nos preocupamos por levantar y aumentar las reuniones y los grupos de intercesión. Los corazones de hombres, mujeres, jóvenes y niños pueden experimentar la paz que hay cuando vamos al trono de la gracia.
+EVANGELISMO (Mateo 28:18-20; II Timoteo.4:5)
+Es nuestra responsabilidad contagiar la pasión por las almas. ¿Cómo va a salvarse la gente, si no hay quién les predique? Todos estamos involucrados en esta importante labor y motivar a otros al evangelismo individual es básico en la vida del creyente y la Iglesia.
+Discipulado (II Timoteo.2:2)
+Las personas dentro de la Iglesia deben ser alimentadas y fortalecidas. Es vital el mantener con sumo cuidado el desarrollo de estudios para principiantes o avanzados y vigilar que los discípulos crezcan con un buen equilibrio de enseñanza, doctrina y práctica. Somos todos los que tenemos que estar preparándonos para presentar defensa, para instar, corregir, instruir, edificar y exhortar en todo tiempo.
+MISIONES (Jn.17:18; Mateo 28:18-20)
+Existen dentro de la Iglesia muchos hombres y mujeres con firmes convicciones, que pueden ser enviados por el mundo y llevar la Palabra de Salvación y esperanza de Nuestro Señor Jesucristo. Cada Pastor y líder de la Iglesia debe evaluar y discernir en qué discípulos existe este genuino llamado a la obra del reino, los discípulos tienen que ser capacitados y apoyados al igual que otros que ya están en el campo misionero. Oramos constantemente por los lugares geográficos a donde Dios los quiere enviar y los motivamos para que en el tiempo de Dios, salgan a sembrar su preciosa semilla.
+ALABANZA Y ADORACIÓN (Efesios. 4:19; Salmos. 149-150)
+Empapar los corazones de esta generación sedienta por aguas nuevas con una alabanza que llegue hasta el cielo. Cambiar, restaurar, alegrar y alentar a cada alma es un gran reto para nosotros. Preparamos grupos de jóvenes discípulos vocalmente, en el uso de diversos instrumentos, coreografías y escenografías para mostrar al mundo entero que las aguas frescas de una alabanza y adoración sinceras, pueden estar llenas de entusiasmo, energía y gran gozo demostrando así el amor y gratitud a nuestro Dios.</mutableString>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="7Qa-BV-XfT" firstAttribute="leading" secondItem="9yR-bN-Qds" secondAttribute="leadingMargin" constant="-22" id="574-S7-oWP"/>
+                            <constraint firstItem="pVa-pU-5VO" firstAttribute="leading" secondItem="9yR-bN-Qds" secondAttribute="leading" id="7fC-AV-1jb"/>
+                            <constraint firstAttribute="bottom" secondItem="pVa-pU-5VO" secondAttribute="bottom" id="Jxq-BI-HuQ"/>
+                            <constraint firstItem="pVa-pU-5VO" firstAttribute="top" secondItem="7Qa-BV-XfT" secondAttribute="bottom" constant="20" id="WXO-LM-e3M"/>
+                            <constraint firstItem="7Qa-BV-XfT" firstAttribute="top" secondItem="4gZ-Yz-zmN" secondAttribute="bottom" constant="24" id="fSU-ri-3Lm"/>
+                            <constraint firstAttribute="trailing" secondItem="pVa-pU-5VO" secondAttribute="trailing" id="j5q-9z-Z6D"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="7Qa-BV-XfT" secondAttribute="trailing" constant="-18" id="lMC-4O-teY"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ii4-zR-g6C" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1791" y="845"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="A1x-DQ-FNm">
@@ -107,7 +265,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textAttributes key="titleTextAttributes">
-                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -121,8 +279,14 @@
         </scene>
     </scenes>
     <resources>
+        <image name="1" width="160" height="175"/>
+        <image name="book-1" width="29" height="26"/>
+        <image name="buyingIcon" width="30" height="30"/>
         <image name="facebook" width="30" height="30"/>
+        <image name="gallery" width="29" height="23"/>
+        <image name="info" width="28" height="22"/>
         <image name="play" width="40" height="40"/>
+        <image name="twitter" width="30" height="30"/>
         <image name="world" width="35" height="35"/>
     </resources>
 </document>
