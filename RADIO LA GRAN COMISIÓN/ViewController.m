@@ -14,6 +14,7 @@
     NSInteger imageCounter;
 }
 
+- (IBAction)exitButtonAction:(id)sender;
 
 
 @property (weak, nonatomic) IBOutlet UIButton *radioButton;
@@ -95,7 +96,7 @@
 
 - (IBAction)facebookAction:(id)sender {
     
-    NSURL *url = [NSURL URLWithString:@"https://www.facebook.com/lagrancomisionradio/"];
+    NSURL *url = [NSURL URLWithString:@"https://www.facebook.com/radiolagrancomision.tv"];
     [[UIApplication sharedApplication] openURL:url options:@{} completionHandler:nil];
 
 }
@@ -127,5 +128,21 @@
 -(void)imagePickerControllerDidCancel:(UIImagePickerController *)picker
 {
     [picker dismissViewControllerAnimated:YES completion:nil];
+}
+- (IBAction)exitButtonAction:(id)sender {
+    
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:nil message:@"Close RADIO LA GRAN COMISIÓN" preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        exit(0);
+        
+    }];
+    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        
+        [self dismissViewControllerAnimated:YES completion:nil];
+        
+    }];
+    [alert addAction:okAction];
+    [alert addAction:cancelAction];
+    [self presentViewController:alert animated:YES completion:nil];
 }
 @end

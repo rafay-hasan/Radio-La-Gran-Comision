@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="r4l-rL-rKl">
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
@@ -125,6 +124,11 @@
                     </view>
                     <navigationItem key="navigationItem" title="LA GRAN COMISIÓN" id="6UX-fQ-NrE">
                         <rightBarButtonItems>
+                            <barButtonItem image="exit" id="oIK-Yq-HZn">
+                                <connections>
+                                    <action selector="exitButtonAction:" destination="BYZ-38-t0r" id="aJR-7V-Hoc"/>
+                                </connections>
+                            </barButtonItem>
                             <barButtonItem image="info" id="nXV-H4-erL">
                                 <connections>
                                     <segue destination="dyO-ZV-86Q" kind="show" id="b9z-3B-cUT"/>
@@ -215,7 +219,7 @@
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="pVa-pU-5VO">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <mutableString key="text">VISIÓN  
+                                <string key="text">VISIÓN  
 La Iglesia que Dios busca debe estar influenciando activamente fuera de sus muros y no solamente dentro de ellos. Queremos ser parte activa de la Gran Comisión de Nuestro Señor Jesús, predicando el Evangelio y haciendo discípulos. Hemos visto como este mundo puede ser impactado con la predicación y enseñanza, la música contemporánea, la alabanza, las artes, etc.
 La Gran Comisión de la radio va a ser ver al Mundo creciendo a tal grado que no pasaremos desapercibidos en nuestra ciudad y nación; enseñando y predicando claramente la Palabra de Dios en todo momento y lugar, alcanzando a multitudes en estadios, cruzadas, y en nuestros programas de radio y TV, etc.
 La Gran Comisión de la radio va a ser motivada por el poder del Espíritu Santo, luchando y avanzando siempre adelante, sin parar... llena de gente que en unidad derribará las puertas de sus enemigos y penetrará fortalezas inquebrantables.
@@ -235,7 +239,7 @@ Las personas dentro de la Iglesia deben ser alimentadas y fortalecidas. Es vital
 MISIONES (Jn.17:18; Mateo 28:18-20)
 Existen dentro de la Iglesia muchos hombres y mujeres con firmes convicciones, que pueden ser enviados por el mundo y llevar la Palabra de Salvación y esperanza de Nuestro Señor Jesucristo. Cada Pastor y líder de la Iglesia debe evaluar y discernir en qué discípulos existe este genuino llamado a la obra del reino, los discípulos tienen que ser capacitados y apoyados al igual que otros que ya están en el campo misionero. Oramos constantemente por los lugares geográficos a donde Dios los quiere enviar y los motivamos para que en el tiempo de Dios, salgan a sembrar su preciosa semilla.
 ALABANZA Y ADORACIÓN (Efesios. 4:19; Salmos. 149-150)
-Empapar los corazones de esta generación sedienta por aguas nuevas con una alabanza que llegue hasta el cielo. Cambiar, restaurar, alegrar y alentar a cada alma es un gran reto para nosotros. Preparamos grupos de jóvenes discípulos vocalmente, en el uso de diversos instrumentos, coreografías y escenografías para mostrar al mundo entero que las aguas frescas de una alabanza y adoración sinceras, pueden estar llenas de entusiasmo, energía y gran gozo demostrando así el amor y gratitud a nuestro Dios.</mutableString>
+Empapar los corazones de esta generación sedienta por aguas nuevas con una alabanza que llegue hasta el cielo. Cambiar, restaurar, alegrar y alentar a cada alma es un gran reto para nosotros. Preparamos grupos de jóvenes discípulos vocalmente, en el uso de diversos instrumentos, coreografías y escenografías para mostrar al mundo entero que las aguas frescas de una alabanza y adoración sinceras, pueden estar llenas de entusiasmo, energía y gran gozo demostrando así el amor y gratitud a nuestro Dios.</string>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -282,6 +286,7 @@ Empapar los corazones de esta generación sedienta por aguas nuevas con una alab
         <image name="1" width="160" height="175"/>
         <image name="book-1" width="29" height="26"/>
         <image name="buyingIcon" width="30" height="30"/>
+        <image name="exit" width="30" height="30"/>
         <image name="facebook" width="30" height="30"/>
         <image name="gallery" width="29" height="23"/>
         <image name="info" width="28" height="22"/>
